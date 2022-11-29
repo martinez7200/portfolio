@@ -32,10 +32,9 @@
         </form>
         <p id="eredm">Az eredmény itt fog megjelenni, ha megnyomod az Entertó gombot!</p>
         <script>
-            
             function szamol() {
                 let freki = 0;
-                freki = Number(induk.value) * Number(capac.value)
+                freki = 1 / ( 2*Math.PI*Math.sqrt(Number(induk.value) * Number(capac.value)))
                 document.getElementById("eredm").innerText = freki;
             }
         </script>
