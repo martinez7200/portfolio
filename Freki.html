@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Kezdőlap</title>
 </head>
+
 <body>
-    <a href="index.html">HOME</a>
-    <br>
-    <h1>Frekiszámoló</h1>
+    <ul>
+        <li><a href="index.html"> <i class="fa fa-home"></i> Home</a></li>
+        <br>
+        <li><a class="active" href="Freki.html">Freki</a></li>
+        <li><a href="#ez">Ez</a></li>
+        <li><a href="#az">AZ</a></li>
+    </ul>
 
-    <form action="">
-        <label for="induk">Add meg az induktivitás értékét: </label>
-        <input type="number" name="induk" id="induk">
-        <label for="induk">Add meg az kapacitás értékét: </label>
-        <input type="number" name="capac" id="capac"> <br>
-        <input type="button" onclick="szamol()" value="Enter"
-        <img src="img/Rezonancia+frekvencia.jpg">
-        
-    </form>
-    <p>Az eredmény itt fog megjelenni, ha  megnyomod az Entertó gombot!</p>
-    <script>
-        let freki = 0;
-        function szamol(){
-
-        }
-    </script>
+    <div class="content">
+        <h1>Frekiszámoló</h1>
+        <form action="">
+            <label for="induk">Add meg az induktivitás értékét: </label>
+            <input type="number" name="induk" id="induk">
+            <label for="induk">Add meg az kapacitás értékét: </label>
+            <input type="number" name="capac" id="capac"> <br>
+            <input type="button" onclick="szamol()" value="Enter" <img src="img/Rezonancia+frekvencia.jpg">
+        </form>
+        <p>Az eredmény itt fog megjelenni, ha megnyomod az Entertó gombot!</p>
+        <script>
+            let freki = 0;
+            function szamol() {
+            }
+        </script>
+    </div>
 </body>
+
 </html>
